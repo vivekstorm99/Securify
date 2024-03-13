@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='style1.css')}}"> -->
+    
+</head>
+<body>
+    <h1>Employee Details:</h1>
+    <form action="/addemployee" method="post">
+        <label> Emp_ID: </label> 
+        <input type="text" name="emp_id" placeholder="" /> <br><br>
+        <label> Name: </label> 
+        <input type="text" placeholder="" name="name"/><br><br>
+        <label> Salary: </label> 
+        <input type="text" placeholder="" name="salary"/> <br><br>
+        <label> Dept: </label>
+        <input type="text" placeholder="" name="dept"/>
+      <br> <br>
+      <button> Submit </button>
+      </form>
+</body>
+</html>

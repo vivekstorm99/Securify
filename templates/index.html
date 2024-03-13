@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Citizen Safety App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .jumbotron{
+        background-color:#2E2D88;
+        color:white;
+      }
+      .nav-item{
+        font-size:20px;
+        color:#2E2D88;
+        background-color: white;
+      }
+    
+      #map{
+        height: 400px;
+        width: 100%;
+      }
+      #myModal{
+        margin-top:100px;
+      }
+      .toplogo {
+    
+    color:#2E2D88
+}
+
+.toplogo img {
+    height : 10%;
+    width : 10%;
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.about-me img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  color:#2E2D88;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+  color:#2E2D88
+}
+
+
+li{
+  padding: 0 2em;
+  margin: 1em 0;
+}
+.heading{
+  padding: 0 2.5em;
+  margin: 1em 0;
+}
+    </style>
+  </head>
+  <body>
+    <!-- <div></div> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand toplogo" href="/"><img src="..\static\pic1.jpg"> Securify</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/report" style="color: #2E2D88" class="button-container">Report Crime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cybertips" style="color: #2E2D88" class="button-container">Cyber Safety Tips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/emergency" style="color: #2E2D88" class="button-container">Emergency Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login" style="color: #2E2D88" class="button-container">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron text-center">
+      <h1>Welcome to Securify - Your Safety, Our Priority.</h1>
+      <p>Here at Securify, We are committed to making your community a safer place to live in.</p>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h1>About Us</h1>
+        <p>
+          Where people protect each other.
+                    Connect and live more safely. Citizen safety app is a personal safety web application that empowers you to protect yourself and the people and places you care about. Our mission is to improve safety in communities by empowering citizens with the ability to quickly and easily alert authorities and their contacts in case of emergencies.
+                    Our app allows users to create a personal safety network and easily share their location with trusted contacts. With just a few taps, users can send an alert to their emergency contacts and local authorities, providing critical information such as their location and the nature of the emergency. It is designed to provide peace of mind and a sense of security for users, knowing that they have a reliable tool to use in case of an emergency.
+                    Join us in creating safer communities, one alert at a time.</p>
+      </div>
+      <img src="..\static\pic1.jpg" alt="me">
+    </div>
+    <h2 class="heading">Reports Registered So Far</h2>
+        <img src="data:image/png;base64,{{ plot_url }}">
+
+  </body>
+</html>
